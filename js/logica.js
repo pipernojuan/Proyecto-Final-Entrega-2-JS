@@ -1,6 +1,6 @@
-const cotizador = new CotizadorSeguroDeHogar(zonaVivienda, tipoVivienda, costoSeguroM2)
+const cotizador = new CotizadorVuelos (tipoDestino, tipoPartida,costoPorPersona)
 
-const cargoZonaDeResidencia = ()=> {
+const cargoDestino = ()=> {
     let optionTD
     zonaVivienda.forEach(element => {
     optionTD += `<option value="${element.factor}">${element.area}</option>`
@@ -8,7 +8,7 @@ const cargoZonaDeResidencia = ()=> {
 return optionTD
 }
 
-const cargoTiposDeVivienda = ()=> {
+const cargoPartida = ()=> {
     let optionTV
         tipoVivienda.forEach(element => {
             optionTV += `<option value="${element.factor}">${element.tipo}</option>`
@@ -16,7 +16,7 @@ const cargoTiposDeVivienda = ()=> {
         return optionTV
 }
 
-const cotizarSeguroVivienda = ()=> {
+const cotizarVuelo = ()=> {
     if (metros2.value !== "") {
         let mts = metros2.value
         let zonaViv = selectZonaVivienda.value
