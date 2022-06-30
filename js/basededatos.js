@@ -17,3 +17,5 @@ const tipoPartida = [
     {"sale": "Montevideo", "factor": 6.03},
     {"sale": "Rio", "factor": 8.89}
 ]
+
+const costoPorPersona = 29.75
