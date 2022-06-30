@@ -19,7 +19,7 @@ body {
 }
 
 .blue.darken-3{
-    background-color: rgb(32, 32, 32)!important;
+    background-color: rgba(48,48,48,255)!important;
 }
 
 .blue.lighten-4{
@@ -28,4 +28,10 @@ body {
 
 .blue.lighten-2{
     background-color: gray!important;
+}
+
+.logo{
+    width:min-content;
+    display: flex;
+    flex-wrap: wrap;
 }

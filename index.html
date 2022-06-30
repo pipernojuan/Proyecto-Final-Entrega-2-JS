@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto" rel="stylesheet">
+  <link rel="shortcut icon" href="./materialize/favicon.ico">
   <link rel="stylesheet" href="materialize/materialize.min.css">
   <link rel="stylesheet" href="./css/estilos.css">
   <script src="materialize/materialize.min.js"></script>
@@ -18,17 +19,17 @@
   <script src="js/objCotizador.js"></script>
   <script src="js/logica.js"></script>
   <script defer src="js/app.js"></script>
-  <title>Vuelos Nacionales Disponibles</title>
+  <title>GOAT</title>
 </head>
 <body>
   <header>
-    <h1>Vuelos</h1>
+    <a class="logo" href="index.html"><img src="./materialize/goat-logo.png" alt="logo" width="100px"></a>
   </header>
   <main>
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper blue darken-3">
-          <a href="#!" class="brand-logo left separate-side-left white-text">Seguros del Hogar</a>
+          <a href="#!" class="brand-logo left separate-side-left white-text">VIAJEMOS JUNTOS</a>
           <ul class="right">
           <li>
             <a href="#" class="btn-floating btn-large blue darken-3 z-depth-0 waves-effect waves-light" id="btnRefrescar">
@@ -41,38 +42,26 @@
     </div>
     </div>
     <div id="contenido" class="wide-80 center blue lighten-4 z-depth-4">
-      <h3 class="black-text">Cotice su vivienda</h3>
+      <h3 class="black-text">Coticemos tu Próximo Viaje</h3>
         <div>
-          <p class="left-align element-border-apart">ZONA DE LA VIVIENDA</p>
+          <p class="left-align element-border-apart">Partida</p>
         <div class="row">
           <div class="col s10 m6 l4 center">
             <select class="browser-default" id="selectZonaVivienda">
               <option></option>
           </select>
           </div>
-          <div class="col s2 m6 l8 left-align">
-            <button class="btn-floating blue lighten-4" title="Consultar factor multiplicador"><i class="material-icons black-text">info</i></button>
-          </div>
         </div>
-          <p class="left-align element-border-apart">TIPO DE VIVIENDA</p>
+          <p class="left-align element-border-apart">Destino</p>
           <div class="row">
             <div class="col s10 m6 l4 center">
               <select class="browser-default" id="selectTipoVivienda">
                 <option> </option>
               </select>
             </div>
-            <div class="col s2 m6 l8 left-align">
-              <button class="btn-floating blue lighten-4" title="Consultar factor multiplicador"><i class="material-icons black-text">info</i></button>
-            </div>
-          </div>
-          <div class="left-align element-border-apart">M2 de la propiedad:</div>
-          <div class="row">
-            <div class="col s4 m6 l2 right-align">
-              <input type="number" id="metros2" class="white" placeholder="Nro. entero" min="10" max="500">
-            </div>
           </div>
             <p>Finalizado el ingreso de datos, pulse el botón para cotizar:</p>
-            <button id="btnCotizar" class="btn-floating blue darken-3 z-depth-2 btn-large waves-effect waves-light title="Pulse para cotizar"><i class="material-icons large">attach_money</i></button>
+            <button id="btnCotizar" class="btn-floating blue darken-3 z-depth-2 btn-large waves-effect waves-light title=Pulse para cotizar"><i class="material-icons large">attach_money</i></button>
         </div>
       </div>
       <br> 
