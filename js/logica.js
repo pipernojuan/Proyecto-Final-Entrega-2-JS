@@ -17,15 +17,14 @@ const cargoPartida = ()=> {
 }
 
 const cotizarVuelo = ()=> {
-    if (valorVuelo.value !== "") {
+    if (personas.value !== "") {
         let pers = personas.value
         let tipoDest = selectTipoDestino.value
         let tipoPart = selectTipoPartida.value
         let valorFinalDelVuelo = cotizador.valorDeVuelo(pers, tipoDest, tipoPart)
             valorFinalDelVuelo = valorFinalDelVuelo.toFixed(2)
-            valorVuelo.innerText = valorFinalDelVuelo
-            
+            valorVuelo.innerText = valorFinalDelVuelo           
     } else {
-        alert("Complete todos los datos solicitados.")
+        alert("Coloque la cantidad de personas para su vuelo")
     }
 }
