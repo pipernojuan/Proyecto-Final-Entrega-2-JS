@@ -2,18 +2,18 @@ const cotizador = new CotizadorVuelos (tipoDestino, tipoPartida,costoPorPersona)
 
 const cargoDestino = ()=> {
     let optionTD
-    zonaVivienda.forEach(element => {
-    optionTD += `<option value="${element.factor}">${element.area}</option>`
+    tipoDestino.forEach(element => {
+    optionTD += `<option value="${element.factor}">${element.llega}</option>`
 });
 return optionTD
 }
 
 const cargoPartida = ()=> {
-    let optionTV
-        tipoVivienda.forEach(element => {
-            optionTV += `<option value="${element.factor}">${element.tipo}</option>`
+    let optionTP
+        tipoPartida.forEach(element => {
+            optionTP += `<option value="${element.factor}">${element.sale}</option>`
         });
-        return optionTV
+        return optionTP
 }
 
 const cotizarVuelo = ()=> {
