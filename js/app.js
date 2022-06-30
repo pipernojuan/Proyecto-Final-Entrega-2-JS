@@ -1,6 +1,6 @@
 selectTipoPartida.innerHTML = cargoPartida()
 selectTipoDestino.innerHTML = cargoDestino()
 
-btnCotizar.addEventListener("click", ()=> cotizarSeguroVivienda() )
+btnCotizar.addEventListener("click", ()=> cotizarVuelo() )
 
 btnRefrescar.addEventListener("click", ()=> location.reload() )
