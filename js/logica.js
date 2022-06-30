@@ -22,8 +22,8 @@ const cotizarVuelo = ()=> {
         let tipoDest = selectTipoDestino.value
         let tipoPart = selectTipoPartida.value
         let valorFinalDelVuelo = cotizador.valorDeVuelo(pers, tipoDest, tipoPart)
-            valorVuelo = valorDeLaCuota.toFixed(2)
             valorVuelo.innerText = `$ ${valorFinalDelVuelo}`
+            valorVuelo.innerText = valorFinalDelVuelo.toFixed(2)
     } else {
         alert("Complete todos los datos solicitados.")
     }
