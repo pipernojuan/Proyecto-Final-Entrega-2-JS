@@ -1,11 +1,11 @@
 const cotizador = new CotizadorSeguroDeHogar(zonaVivienda, tipoVivienda, costoSeguroM2)
 
 const cargoZonaDeResidencia = ()=> {
-      let optionZV
-          zonaVivienda.forEach(element => {
-            optionZV += `<option value="${element.factor}">${element.area}</option>`
-          });
-          return optionZV
+    let optionTD
+    zonaVivienda.forEach(element => {
+    optionTD += `<option value="${element.factor}">${element.area}</option>`
+});
+return optionTD
 }
 
 const cargoTiposDeVivienda = ()=> {

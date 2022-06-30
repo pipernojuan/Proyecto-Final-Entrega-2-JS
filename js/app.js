@@ -1,5 +1,5 @@
-selectZonaVivienda.innerHTML = cargoZonaDeResidencia()
-selectTipoVivienda.innerHTML = cargoTiposDeVivienda()
+selectTipoPartida.innerHTML = cargoZonaDeResidencia()
+selectTipoDestino.innerHTML = cargoTiposDeVivienda()
 
 btnCotizar.addEventListener("click", ()=> cotizarSeguroVivienda() )
 
