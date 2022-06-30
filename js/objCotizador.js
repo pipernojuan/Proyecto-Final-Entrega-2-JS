@@ -6,6 +6,6 @@ class CotizadorVuelos {
     }
     valorDeVuelo(pers, factorPartida, factorDestino) {
         let valorVueloFinal = parseFloat(this.persona) * parseInt(pers) * parseFloat(factorPartida) * parseFloat(factorDestino)
-            return valorVueloFinal
+        return valorVueloFinal
     }
 }

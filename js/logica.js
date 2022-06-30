@@ -18,12 +18,12 @@ const cargoPartida = ()=> {
 
 const cotizarVuelo = ()=> {
     if (metros2.value !== "") {
-        let mts = metros2.value
-        let zonaViv = selectZonaVivienda.value
-        let tipoViv = selectTipoVivienda.value
-        let valorDeLaCuota = cotizador.valorDePoliza(mts, zonaViv, tipoViv)
-            valorDeLaCuota = valorDeLaCuota.toFixed(2)
-            valorCuota.innerText = `$ ${valorDeLaCuota}`
+        let pers = personas.value
+        let tipoDest = selectTipoDestino.value
+        let tipoPart = selectTipoPartida.value
+        let valorFinalDelVuelo = cotizador.valorDeVuelo(pers, tipoDest, tipoPart)
+            valorVuelo = valorDeLaCuota.toFixed(2)
+            valorVuelo.innerText = `$ ${valorFinalDelVuelo}`
     } else {
         alert("Complete todos los datos solicitados.")
     }
