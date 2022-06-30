@@ -2,10 +2,10 @@ class CotizadorVuelos {
     constructor(jsonTD, jsonTP, costoPorPersona) {
         this.arrayTipoDestino = jsonTD
         this.arrayTipoPartida = jsonTP
-        this.arrayPersona = costoPorPersona
+        this.persona = costoPorPersona
     }
-    valorDeVuelo(m2i, factorZona, factorVivienda) {
-        let valorPolizaFinal = parseFloat(this.costoM2) * parseInt(m2i) * parseFloat(factorZona) * parseFloat(factorVivienda)
-            return valorPolizaFinal
+    valorDeVuelo(pers, factorPartida, factorDestino) {
+        let valorVueloFinal = parseFloat(this.persona) * parseInt(pers) * parseFloat(factorPartida) * parseFloat(factorDestino)
+            return valorVueloFinal
     }
 }
