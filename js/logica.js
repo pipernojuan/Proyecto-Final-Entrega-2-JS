@@ -23,7 +23,7 @@ const cotizarVuelo = ()=> {
         let tipoPart = selectTipoPartida.value
         let valorFinalDelVuelo = cotizador.valorDeVuelo(pers, tipoDest, tipoPart)
             valorFinalDelVuelo = valorFinalDelVuelo.toFixed(2)
-            valorVuelo.innerText = valorFinalDelVuelo           
+            valorVuelo.innerText =  `$ ${valorFinalDelVuelo}`           
     } else {
         alert("Coloque la cantidad de personas para su vuelo")
     }
