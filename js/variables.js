@@ -1,7 +1,6 @@
-const selectZonaVivienda = document.querySelector("#selectZonaVivienda")
-const selectTipoVivienda = document.querySelector("#selectTipoVivienda")
-const metros2 = document.querySelector("#metros2")
+const selectTipoDestino = document.querySelector("#selectTipoDestino")
+const selectTipoPartida = document.querySelector("#selectTipoPartida")
 
 const btnCotizar = document.querySelector("#btnCotizar")
 const btnRefrescar = document.querySelector("#btnRefrescar")
-const valorCuota = document.querySelector("#valorCuota")
+const valorVuelo = document.querySelector("#valorVuelo")
