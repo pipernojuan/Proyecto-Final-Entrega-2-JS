@@ -1,4 +1,5 @@
 const tipoDestino = [
+    {"llega": "", "factor": 0},
     {"llega": "Bariloche", "factor": 4.35},
     {"llega": "Mendoza", "factor": 3.01},
     {"llega": "Córdoba", "factor": 1.00},
@@ -9,6 +10,7 @@ const tipoDestino = [
 ]    
 
 const tipoPartida = [
+    {"sale": "", "factor": 0},
     {"sale": "Ciudad de Buenos Aires", "factor": 2.02}, 
     {"sale": "Córdoba Capital", "factor": 2.03},
     {"sale": "Rosario", "factor": 3.92},
