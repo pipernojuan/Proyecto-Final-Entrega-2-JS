@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="materialize/materialize.min.css">
+  <link rel="stylesheet" href="./css/estilos.css">
+  <script src="materialize/materialize.min.js"></script>
+  <script src="js/basededatos.js"></script>
+  <script src="js/variables.js"></script>
+  <script src="js/objCotizador.js"></script>
+  <script src="js/logica.js"></script>
+  <script defer src="js/app.js"></script>
+  <title>Vuelos Nacionales Disponibles</title>
+</head>
+<body>
+  <header>
+    <h1>Vuelos</h1>
+  </header>
+  <main>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper blue darken-3">
+          <a href="#!" class="brand-logo left separate-side-left white-text">Seguros del Hogar</a>
+          <ul class="right">
+          <li>
+            <a href="#" class="btn-floating btn-large blue darken-3 z-depth-0 waves-effect waves-light" id="btnRefrescar">
+              <i class="material-icons white-text center" title="Comenzar nuevamente">refresh</i>
+            </a>
+          </li>
+        </ul>
+        </div>
+      </nav>
+    </div>
+    </div>
+    <div id="contenido" class="wide-80 center blue lighten-4 z-depth-4">
+      <h3 class="black-text">Cotice su vivienda</h3>
+        <div>
+          <p class="left-align element-border-apart">ZONA DE LA VIVIENDA</p>
+        <div class="row">
+          <div class="col s10 m6 l4 center">
+            <select class="browser-default" id="selectZonaVivienda">
+              <option></option>
+          </select>
+          </div>
+          <div class="col s2 m6 l8 left-align">
+            <button class="btn-floating blue lighten-4" title="Consultar factor multiplicador"><i class="material-icons black-text">info</i></button>
+          </div>
+        </div>
+          <p class="left-align element-border-apart">TIPO DE VIVIENDA</p>
+          <div class="row">
+            <div class="col s10 m6 l4 center">
+              <select class="browser-default" id="selectTipoVivienda">
+                <option> </option>
+              </select>
+            </div>
+            <div class="col s2 m6 l8 left-align">
+              <button class="btn-floating blue lighten-4" title="Consultar factor multiplicador"><i class="material-icons black-text">info</i></button>
+            </div>
+          </div>
+          <div class="left-align element-border-apart">M2 de la propiedad:</div>
+          <div class="row">
+            <div class="col s4 m6 l2 right-align">
+              <input type="number" id="metros2" class="white" placeholder="Nro. entero" min="10" max="500">
+            </div>
+          </div>
+            <p>Finalizado el ingreso de datos, pulse el botón para cotizar:</p>
+            <button id="btnCotizar" class="btn-floating blue darken-3 z-depth-2 btn-large waves-effect waves-light title="Pulse para cotizar"><i class="material-icons large">attach_money</i></button>
+        </div>
+      </div>
+      <br> 
+      <div id="resultadoCotizacion" class="wide-80 center blue lighten-2 z-depth-4">
+        <div class="row">
+          <div class="col s8 left">
+            <h4 class="black-text left-align">Póliza: </h4>
+          </div>
+          <div class="col s4 right">
+            <h4 id="valorCuota" class="yellow-text right-align">$ 0.00</h4>
+          </div>      
+        </div>
+      </div>
+      <br>
+  </main>
+</body>
+</html>

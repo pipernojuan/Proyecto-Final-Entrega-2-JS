@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.separate-side-left {
+    margin-left: 20px;
+}
+
+.lightgrey-text {
+    color: rgb(177, 0, 0);
+}
+
+.wide-80 {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.blue.darken-3{
+    background-color: rgb(32, 32, 32)!important;
+}
+
+.blue.lighten-4{
+    background-color: gray!important;
+}
+
+.blue.lighten-2{
+    background-color: gray!important;
+}
