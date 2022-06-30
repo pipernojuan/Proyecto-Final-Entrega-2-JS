@@ -5,15 +5,15 @@ const cargoDestino = ()=> {
     tipoDestino.forEach(element => {
     optionTD += `<option value="${element.factor}">${element.llega}</option>`
 });
-return optionTD
+    return optionTD
 }
 
 const cargoPartida = ()=> {
     let optionTP
-        tipoPartida.forEach(element => {
-            optionTP += `<option value="${element.factor}">${element.sale}</option>`
-        });
-        return optionTP
+    tipoPartida.forEach(element => {
+        optionTP += `<option value="${element.factor}">${element.sale}</option>`
+});
+    return optionTP
 }
 
 const cotizarVuelo = ()=> {
